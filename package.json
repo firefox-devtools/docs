@@ -6,7 +6,7 @@
   "scripts": {
     "update": "node update-repo.js",
     "render": "gitbook build ./ff-dt/docs/ ./output",
-    "publish": "gh-pages -d output",
+    "publish": "gh-pages --message 'Automatically render docs' -d output",
 	"start": "npm run update && npm run render && npm run publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

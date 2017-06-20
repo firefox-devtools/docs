@@ -4,9 +4,8 @@ let shell = require('shelljs');
 let config = require('./config.js');
 
 let repo_path = path.join(__dirname, config.directory);
-// depth=10 creates a shallow clone, which reduces download time
-// (from ~1m to ~20seconds if depth=1)
-let git_clone_command = `git clone ${config.address} --single-branch --depth=10`;
+// depth=1 creates a shallow clone, which reduces download time from ~1m to ~20seconds!
+let git_clone_command = `git clone ${config.address} --single-branch --depth=1`;
 
 if (!shell.which('git')) {
 	shell.echo('Sorry, this script requires git');
