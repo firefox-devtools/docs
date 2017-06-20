@@ -1,6 +1,6 @@
 # DevTools Docs
 
-These are scripts that *render* and publish the docs, which are hosted elsewhere (currently in the `docs/` folder in another repository).
+These are scripts that download the sources, *render* and publish the docs, which are hosted elsewhere (currently in the `docs/` folder in [this repository](https://github.com/ochameau/ff-dt/)).
 
 ```bash
 npm install

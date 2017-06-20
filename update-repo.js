@@ -4,20 +4,21 @@ let shell = require('shelljs');
 let config = require('./config.js');
 
 let repo_path = path.join(__dirname, config.directory);
-let git_clone_command = `git clone ${config.address} --single-branch`;
-let git_update_command = `git pull origin master`;
+// depth=1 creates a shallow clone, which reduces download time from ~1m to ~20seconds!
+let git_clone_command = `git clone ${config.address} --single-branch --depth=1`;
 
 if (!shell.which('git')) {
 	shell.echo('Sorry, this script requires git');
 	shell.exit(1);
 }
 
-var command;
+let command = git_clone_command;
 
-if(!fs.existsSync(repo_path)) {
-	command = git_clone_command;
-} else {
-	command = git_update_command;
+// Due to the way the repo we use is imported from Mercurial,
+// git pull doesn't work, so we'll just delete and clone again :-o
+if(fs.existsSync(repo_path)) {
+	console.log('Repo found, deleting old copy');
+	shell.rm('-Rf', repo_path);
 }
 
 // By checking the output and returning a non zero exit code
