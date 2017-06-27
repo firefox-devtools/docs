@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "update": "node update-repo.js",
-    "render": "gitbook build ./ff-dt/docs/ ./output",
-    "publish": "gh-pages --message 'Automatically render docs' -d output",
-	"start": "npm run update && npm run render && npm run publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gitbook build ./ff-dt/docs/ ./output",
+	"travis-render": "npm run update && npm run build",
+    "travis-publish": "gh-pages-travis"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,7 @@
   },
   "homepage": "https://github.com/devtools-html/docs#readme",
   "dependencies": {
-    "gh-pages": "^1.0.0",
+    "gh-pages-travis": "^1.0.4",
     "gitbook-cli": "^2.3.0",
     "shelljs": "^0.7.8"
   }
