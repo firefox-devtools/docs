@@ -4,12 +4,15 @@ These are scripts that download the sources, *render* and publish the docs, whic
 
 ```bash
 npm install
-npm run update # updates the repo
-npm run render # renders the docs
-npm run publish # pushes to `gh-pages` branch
+npm run update # updates the external repo we use as source of Truth™
+npm run build # renders the docs from the repo using GitBook
+npm run travis-build # runs update and build
+npm run travis-publish # publishes the contents of output to gh-pages
 ```
 
-**Note:** this is **not** automated right now. Someone with push permissions in this repository needs to run this each time we want to update the site.
+The scripts whose name starts with `travis-` are intended to be run in Travis CI, just in case it wasn't obvious.
+
+In Travis, `travis-build` will be run first. If it's successful, `travis-publish` is called.
 
 ## Requirements
 
