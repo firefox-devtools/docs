@@ -28,7 +28,7 @@ Publishes the contents of `output` to the `gh-pages` branch, using the [gh-pages
 
 The scripts whose name starts with `travis-` are intended to be run in Travis CI, just in case it wasn't obvious.
 
-In Travis, `travis-build` will be run first. If it's successful, `travis-publish` is called. Have a look at [./travis.yml](travis.yml) for more details.
+In Travis, `travis-build` will be run first. If it's successful, `travis-publish` is called. Have a look at [.travis.yml](./.travis.yml) for more details.
 
 ## How was this set up?
 
