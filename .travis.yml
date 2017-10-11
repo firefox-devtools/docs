@@ -19,7 +19,8 @@ env:
         - GIT_NAME="travis"
         - GIT_EMAIL="deploy@travis-ci.org"
 script:
-    - npm run travis-render
+    - echo "Cloning gecko-dev can take some time"
+    - travis_wait 30 npm run travis-render
 after_success:
     - npm run travis-publish
 before_install:

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "update": "node update-repo.js",
-    "build": "gitbook build ./ff-dt/docs/ ./output",
-	"travis-render": "npm run update && npm run build && cp ./CNAME ./output",
+    "build": "gitbook build ./gecko-dev/devtools/docs/ ./output",
+    "travis-render": "npm run update && npm run build && cp ./CNAME ./output",
     "travis-publish": "gh-pages-travis"
   },
   "repository": {
