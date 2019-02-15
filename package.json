@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devtools-html/docs.git"
+    "url": "git+https://github.com/firefox-devtools/docs.git"
   },
   "keywords": [
     "docs",
@@ -21,9 +21,9 @@
   "author": "DevTools",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/devtools-html/docs/issues"
+    "url": "https://github.com/firefox-devtools/docs/issues"
   },
-  "homepage": "https://github.com/devtools-html/docs#readme",
+  "homepage": "https://github.com/firefox-devtools/docs#readme",
   "dependencies": {
     "gh-pages-travis": "^1.0.4",
     "gitbook-cli": "^2.3.0",
