@@ -58,5 +58,5 @@ If you push a commit to GitHub and Travis runs the script successfully and a new
 
 
 
-[travis-image]: https://travis-ci.org/devtools-html/docs.svg?branch=master
-[travis-url]: https://travis-ci.org/devtools-html/docs
+[travis-image]: https://travis-ci.org/firefox-devtools/docs.svg?branch=master
+[travis-url]: https://travis-ci.org/firefox-devtools/docs
