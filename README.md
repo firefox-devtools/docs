@@ -1,4 +1,4 @@
-# [Firefox Developer Tools Docs](http://devtools-html.github.io/docs) [![Travis tests][travis-image]][travis-url]
+# [Firefox Developer Tools Docs](https://docs.firefox-dev.tools/) [![Travis tests][travis-image]][travis-url]
 
 This repository contains scripts that download the sources, *render* and publish the docs, which are hosted elsewhere (currently in the `devtools/docs/` folder of [this repository](https://github.com/mozilla/gecko-dev)).
 
