@@ -2,7 +2,7 @@
 
 This repository contains scripts that download the sources, *render* and publish the docs, which are hosted elsewhere (currently in the `devtools/docs/` folder of [this repository](https://github.com/mozilla/gecko-dev)).
 
-The automation happens on Travis CI. You can check the [status of the builds](https://travis-ci.org/firefox-devtools/docs) if you're curious.
+The automation happens on [Travis CI](https://travis-ci.org/). You can check the [status of the builds](https://travis-ci.org/firefox-devtools/docs) if you're curious.
 
 ## Available npm scripts
 
